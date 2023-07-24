@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 5 Selector de ID | Portada</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <p>Hola soy una etiqueta de Párrafo</p>
+    <p>Hola soy una etiqueta de Párrafo</p>
+    
+
+    <div id='contenedor'>Este es un div con identificador 'contenedor'</div>
+    <div>Este es un div con identificador 'contenedor'</div>
+    
+    <script>
+        $(function(){
+            // selector mediante etiqueta(nombre de la etiqueta 'p')
+            $("p").html("Cambiando el texto de esta etiqueta.");
+            
+            // selector mediante Id(nombre del Id 'contenedor')
+            $("#contenedor").html("Cambiando el texto de esta Div con ID.");
+        });
+    </script>
+</body>
+</html>
