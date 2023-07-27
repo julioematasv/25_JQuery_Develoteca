@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 12 Evento MouseEnter | Portada</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="documento">Pasar Mouse para desencadenar evento mouseenter</div>
+    <p>Hola, presiona aquí</p>
+    <h4 id="mensaje"></h4>
+    
+    
+    <script>
+        // Esta función anonima inicia los script de jQuery
+        $(function(){
+
+            // Esta función es para el click.
+            $("p").click(function(){
+                $("p").html("!Hola, soy el resultado del evento Click");
+                $("#mensaje").html("!Hola, me han hecho aparecer con el evento click");
+            });
+
+            // Esta función es para el mouseenter.
+            $("#documento").mouseenter(function(){
+                $("#mensaje").css("color", "blue").html("Hola soy el evento MouseEnter!!");
+            });
+
+        });
+
+    </script>
+</body>
+</html>
