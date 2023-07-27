@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 11 Evento DobleClick | Portada</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <p>Hola, presiona dos veces aquí</p>
+    <h4 id="mensaje"></h4>
+    
+    
+    <script>
+        // Esta función anonima inicia los script de jQuery
+        $(function(){
+
+            $("p").dblclick(function(){
+                $("p").html("!Hola, soy el resultado del evento dobleclick");
+
+                $("#mensaje").html("!Hola, me han hecho aparecer con el evento dobleclick");
+            });
+            
+        });
+    </script>
+</body>
+</html>
